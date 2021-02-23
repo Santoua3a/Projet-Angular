@@ -1,0 +1,8 @@
+<!--ul>
+    <app-fils [ordre]="tab[0]" [villeNaissance]="sud" ></app-fils>
+    <app-fils [ordre]="tab[1]" [villeNaissance]="nord" ></app-fils>
+    <app-fils [ordre]="tab[2]" [villeNaissance]="capitale" ></app-fils>
+</ul-->
+
+<h3>Moyenne de mes enfants est : {{moyenne}}</h3>
+<app-fils *ngFor="let enfants of enfants" [nom]="enfants" (message)="computeAvg($event)"></app-fils>
